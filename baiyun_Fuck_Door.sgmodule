@@ -1,0 +1,13 @@
+#!name=baiyun_Fuck_Door
+#!desc=去他妈的门
+#!author=Joie
+#!homepage=https://gitee.com/JiYi12300/baiyun_-fuck_-door
+#!url=https://gitee.com/JiYi12300/baiyun_-fuck_-door/raw/master/baiyun_Fuck_Door.sgmodule
+
+[Script]
+# 去他妈的门
+Fuck_Door = type=http-request, pattern=^https:\/\/www.pinganbaiyun.cn\/baiyunuser\/entranceguard\/getList, requires-body=1, timeout=5, script-path=https://gitee.com/JiYi12300/baiyun_-fuck_-door/raw/master/baiyun_Fuck_Door.js, argument=
+
+[MITM]
+hostname = %APPEND% *.pinganbaiyun.cn
+
